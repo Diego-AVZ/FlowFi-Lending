@@ -5,23 +5,6 @@ import "@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.s
 import "./Lib.sol";
 
 contract LendingStorage {
-    
-    /*
-    * 
-    *          1. Despositos de liquidez USDC, ETH, BTC           -- LEND
-    *          2. Depositos de colateral en ERC721 liqPositions   -- COLLATERAL
-    *          3. Retiros de liquidez USDC, ETH, BTC              -- BORROW
-    *
-    *
-    *          Contratos
-    *               1. MAIN para frontEnd
-    *               2. LIQUIDITY Reserve (LENDS and BORROWs)
-    *               3. LP erc721 Reserve (COLLATERALS)
-    *               4. Executor
-    *               5. STORAGE Data
-    *               6. Maths
-    * ✔
-    */
 
     error InsufficientSupply(uint8 token, uint256 available, uint256 requested);
     error InvalidTokenType(uint8 token);
